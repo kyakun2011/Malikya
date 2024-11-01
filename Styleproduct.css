@@ -1,0 +1,136 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+    box-sizing: border-box;
+}
+.product{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 47%;
+    background-color: purple;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+.details{
+    flex-basis: 53%;
+    background-color: purple;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 13px;
+    font-weight: 500;
+    color: greenyellow;
+}
+.details h1{
+    color: greenyellow;
+    font-size: 35px;
+}
+.details h2{
+    color: aqua;
+    font-size: 30px;
+}
+.details h3{
+    color: darkblue;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.option{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding-top: 100px;
+}
+.option input:checked + span {
+    color: goldenrod;
+    font-weight: 600;
+}
+.color {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color p{
+    width: 75px;
+}
+.colors-1{
+    background-color: yellow;
+}
+.colors-2{
+    background-color: red;
+}
+.colors-3{
+    background-color: orange;
+}
+.color input{
+    display: none;
+}
+.color input:checked + span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px white, 0 0 0 6px black;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quantity p{
+    width: 75px;
+}
+.quantity input{
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    border-radius: 12px;
+}
+form button{
+    background-color: greenyellow;
+    color: red;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0px 10px 10px rgba(85, 63, 240,0.25);
+    cursor: pointer;
+}
+.controls{
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+}

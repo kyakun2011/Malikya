@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="styleproduct.css">
+</head>
+<body>
+    <div class="container">
+        <div class="produt">
+            <div class="gallery"></div>
+            <img src="images/1st Product for GamersHubZone.jfif" alt="Nintendo's New Games" id="ProductImg">
+            <div class="controls">
+                <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+            </div>
+        </div>
+        <div class="details">
+            <h1>Nintendo's New Games</h1>
+            <h2>$33,71</h2>
+            <h3>Discount 6.2%</h3>
+            <p>Games that will be out this October!!!</p>
+            <form>
+                <div class="option">
+                    <p>Option :</p>
+                    <label for="Detective Pikachu Returns">
+                        <input type="checkbox" name="option" id="Detective Pikachu Returns">
+                        <span>Detective Pikachu Returns</span>
+                    </label>
+                    <label for="Super Mario Wonder">
+                        <input type="checkbox" name="option" id="Super Mario Wonder">
+                        <span>Super Mario Wonder</span>
+                    </label>
+                    <label for="Just Dance 2024 Edition">
+                        <input type="checkbox" name="option" id="Just Dance 2024 Edition">
+                        <span>Just Dance 2024 Edition</span>
+                    </label>
+                </div>
+
+                <div class="color">
+                    <p>Color</p>
+                    <label for="yellow">
+                        <input type="radio" name="color" id="yellow" data-image="images/pikachu.AVIF">
+                        <span class="colors-1"></span>
+                    </label>
+                    <label for="red">
+                        <input type="radio" name="color" id="red" data-image="images/2nd Sub Product for 1st Product.JFIF">
+                        <span class="colors-2"></span>
+                    </label>
+                    <label for="orange">
+                        <input type="radio" name="color" id="orange" data-image="images/3rd Sub topic for the 1st product.JFIF">
+                        <span class="colors-3"></span>
+                    </label>
+                </div>
+                <div class="quantity">
+                    <p>Quantity</p>
+                    <input type="number" id="quantityinput" value="1" min="1">
+                    <p id="stockinfo"></p>
+                </div>
+                <a href="#"><button type="button" id="buybutton">Add to Cart</button></a>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="scriptproduct.js"></script>
+</body>
+</html>
